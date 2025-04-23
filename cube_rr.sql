@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 23 avr. 2025 à 11:48
+-- Généré le : mer. 23 avr. 2025 à 13:01
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
-  `motDePasse` varchar(50) NOT NULL,
+  `motDePasse` varchar(100) NOT NULL,
   PRIMARY KEY (`idUtilisateur`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
@@ -41,9 +41,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`idUtilisateur`, `nom`, `prenom`, `motDePasse`) VALUES
-(1, 'TEST', 'Johnny', '984816fd329622876e14907634264e6f332e9fb3'),
-(2, 'WRIGHT', 'Phoenix', 'fa1127d8886cf660b5b9ab3678398e0130d3ec5a'),
-(3, 'HUNTER', 'Benjamin', '2ae19ba8b4267562eef6641ea360a95e396eef03');
+(1, 'TEST', 'Johnny', '94ee059335e587e501cc4bf90613e0814f00a7b08bc7c648fd865a2af6a22cc2'),
+(2, 'WRIGHT', 'Phoenix', '8693196abe65b32a3c18e10304e845d1c7286ddfe9212f958edb25721554203e'),
+(3, 'HUNTER', 'Benjamin', '06659319dce5b93c72dc9fd5a6e52ca0c9aa14d30602a967c7afdaf81272ccc7');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
