@@ -17,7 +17,7 @@ try {
 // Connexion au site
 if (isset($_POST['nom']) && isset($_POST['motDePasse'])) {
     $nom = $_POST['nom'];
-    $motDePasse = sha1($_POST['motDePasse']); // ⚠️ HASH SHA1 côté PHP
+    $motDePasse = hash('sha256', $_POST['motDePasse']);
 
     // Requête de connexion
     $stmt = $pdo->prepare("SELECT * FROM utilisateur WHERE nom = :nom AND motDePasse = :motDePasse");
