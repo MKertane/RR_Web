@@ -12,7 +12,7 @@ if (!isset($_SESSION['idUtilisateur'])) {
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CESIZEN - Accueil</title>
+    <title> RR - Accueil</title>
 </head>
 <body>
     <h1>Bienvenue, <?php echo htmlspecialchars($_SESSION['nom']); ?> !</h1>
