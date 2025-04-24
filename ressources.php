@@ -1,6 +1,11 @@
 <?php
 
 include 'navbar.php';
+
+if (!isset($_SESSION['idUtilisateur'])) {
+    header("Location: login.php");
+    exit();
+}
 // Simuler des données (id, titre, lien)
 $ressources = [
     [
